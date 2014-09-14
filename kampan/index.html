@@ -1,0 +1,73 @@
+---
+layout: default
+title: Kampaň
+---
+
+Piráti se spoléhají na velkou pomoc dobrovolníků v kampani. Těšíme se s vámi na některém předvolebním setkání s Piráty. 
+
+<h2> Distribuční místa materiálů </h2>
+
+
+
+<table class="table table-striped">
+<tr>
+  <th rowspan="2">Místo</th>
+  <th rowspan="2">Kontakt</th>
+  <th colspan="7">Dostupnost materiálů</th>
+</tr>
+
+<tr>
+  <th>Noviny</th>
+  <th>Letáky</th>
+  <th>Plakáty</th>
+  <th>Náramky</th>
+  <th>Trička</th>
+  <th>Samolepky</th>
+  <th>Placky</th>
+</tr>
+
+<tbody>
+
+{% for misto in site.data.distribuce %}
+
+<tr>
+  <td><strong>{{misto.["název"]}}</strong> <br/> {{ misto.["adresa"] }}, {{ misto.["městská část"] }} <br/> {{ misto.["otvírací doba"] }}</td>
+  <td>{% for osoba in misto.kontakt %} {% if forloop.index != 1 %}<br/>{% endif %} {{ osoba.["jméno"] }}, tel. {{ osoba.["telefon"] }} {% endfor %} </td>
+  <td{% if misto.["materiály"].["noviny"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}> {{ misto.["materiály"].["noviny"] }}</td>
+  <td{% if misto.["materiály"].["letáky"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}> {{ misto.["materiály"].["letáky"] }}</td>
+  <td{% if misto.["materiály"].["plakáty"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}> {{ misto.["materiály"].["plakáty"] }}</td>
+  <td{% if misto.["materiály"].["náramky"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}> {{ misto.["materiály"].["náramky"] }}</td>
+  <td{% if misto.["materiály"].["trička"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}> {{ misto.["materiály"].["trička"] }}</td>
+  <td{% if misto.["materiály"].["samolepky"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}> {{ misto.["materiály"].["samolepky"] }}</td>
+  <td{% if misto.["materiály"].["placky"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}> {{ misto.["materiály"].["placky"] }}</td>
+{% endfor %}
+</tbody>
+</table>
+
+<p>Odkazy na repozitáře s grafickými podklady pro úpravu nebo domácí tisk najdete na <a href="tym.html">samostatné stránce</a>.</p>
+
+<iframe src="https://www.google.com/calendar/embed?title=P%C5%99edvolebn%C3%AD%20akce%20Pir%C3%A1t%C5%AF%20Praha&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=450&amp;wkst=2&amp;hl=cs&amp;bgcolor=%23ffffff&amp;src=rm0h4oqjk2j2o0615sc4d1slfk%40group.calendar.google.com&amp;color=%23428bca&amp;ctz=Europe%2FPrague" style=" border-width:0;float:right;" width="300" height="450" frameborder="0" scrolling="no"></iframe>
+
+<h2> Kampaňový tým </h2>
+
+{% for clovek in site.data.kampan limit:4 %}
+
+<div class="personal-label">
+<img src="{{ clovek.["foto"] }}" class="img-circle"/>
+<a href="mailto:{{ clovek.["mail"] }}">{{ clovek.["jméno"] }}</a>, <br/> tel. {{ clovek.["telefon"] }}<br/>
+{{clovek.["funkce"]}}
+<ul>
+{% for ukol in clovek.["úkoly"] %}
+<li>{{ ukol }}</li>
+{% endfor %}
+</ul>
+</div>
+
+{% endfor %}
+
+<p><a href="tym.html">Celé složení kampaňového týmu</a></p>
+
+<h2> Financování kampaně </h2>
+
+Kampaň financujeme z <a href="https://www.pirati.cz/fo/hospodareni2014/rozpocty/praha/start">rozpočtu krajského sdružení Praha na rok 2014</a>. V něm si můžete rozkliknout výdaje z jednotlivých rozpočtových položek. Všechny transakce provádíme přes transparentní <a href="https://www.fio.cz/scgi-bin/hermes/dz-transparent.cgi?ID_ucet=2100048174">hlavní účet</a> České pirátské strany.
+

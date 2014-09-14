@@ -1,0 +1,27 @@
+# Dependencies
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+highlighter: pygments
+
+# Permalinks
+permalink:	/:title
+
+# SASS output
+sass:
+    style: :compressed
+
+# Setup
+title:		Praha volí Piráty
+tagline:	'blog'
+description:	"Kandidátní listina České pirátské strany pro volby do zastupitelstva hl. m. Prahy konané 10. a 11. října 2014"
+baseurl:		http://www.prahavolijinak.cz
+
+author:
+  name:		'Jakub Michálek'
+  url:		https://www.pirati.cz/lide/jakub_michalek
+
+paginate:	5
+
+# Custom vars
+favicon:		/assets/images/favicon.ico

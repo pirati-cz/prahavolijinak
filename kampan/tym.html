@@ -1,0 +1,32 @@
+---
+layout: default
+title: Kampaňový tým
+---
+
+{% for clovek in site.data.kampan %}
+
+<div class="personal-label">
+<img src="{{ clovek.["foto"] }}" class="img-circle"/>
+<a href="mailto:{{ clovek.["mail"] }}">{{ clovek.["jméno"] }}</a>, <br/> tel. {{ clovek.["telefon"] }}<br/>
+{{clovek.["funkce"]}}
+<ul>
+{% for ukol in clovek.["úkoly"] %}
+<li>{{ ukol }}</li>
+{% endfor %}
+</ul>
+</div>
+
+{% endfor %}
+
+<h2> Používané technické platformy </h2>
+
+<p>Všechny grafické podklady, úkoly a informace průběžně zveřejňujeme, takže se můžete do naší kampaně kdykoliv zapojit. Tento otevřený přístup si chceme uchovat i v zastupitelstvu hlavního města Prahy.</p>
+
+<table class="table table-striped platformy">
+{% for platforma in site.data.platformy %}
+<tr>
+<td><a href="{{ platforma.["url"] }}"><img src="{{ platforma.["foto"] }}" alt="{{ platforma.["název"] }}"/></a></td>
+<td><a href="{{ platforma.["url"] }}">{{ platforma.["název"] }}</a><br/> {{ platforma.["účel"] }}</td>
+</tr>
+{% endfor %}
+</table>
