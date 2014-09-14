@@ -3,46 +3,68 @@ layout: default
 title: Kampaň
 ---
 
-Piráti se spoléhají na velkou pomoc dobrovolníků v kampani. Těšíme se s vámi na některém předvolebním setkání s Piráty. 
+<p>Piráti se spoléhají na velkou pomoc dobrovolníků v kampani. Těšíme se s vámi na některém předvolebním setkání s Piráty.</p>
 
 <h2> Distribuční místa materiálů </h2>
 
+<div id="no-more-tables">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th rowspan="2">Místo</th>
+            <th rowspan="2">Kontakt</th>
+            <th colspan="7">Dostupnost materiálů</th>
+        </tr>
 
+        <tr>
+            <th>Noviny</th>
+            <th>Letáky</th>
+            <th>Plakáty</th>
+            <th>Náramky</th>
+            <th>Trička</th>
+            <th>Samolepky</th>
+            <th>Placky</th>
+        </tr>
+        </thead>
+        <tbody>
 
-<table class="table table-striped">
-<tr>
-  <th rowspan="2">Místo</th>
-  <th rowspan="2">Kontakt</th>
-  <th colspan="7">Dostupnost materiálů</th>
-</tr>
+        {% for misto in site.data.distribuce %}
 
-<tr>
-  <th>Noviny</th>
-  <th>Letáky</th>
-  <th>Plakáty</th>
-  <th>Náramky</th>
-  <th>Trička</th>
-  <th>Samolepky</th>
-  <th>Placky</th>
-</tr>
-
-<tbody>
-
-{% for misto in site.data.distribuce %}
-
-<tr>
-  <td><strong>{{misto.["název"]}}</strong> <br/> {{ misto.["adresa"] }}, {{ misto.["městská část"] }} <br/> {{ misto.["otvírací doba"] }}</td>
-  <td>{% for osoba in misto.kontakt %} {% if forloop.index != 1 %}<br/>{% endif %} {{ osoba.["jméno"] }}, tel. {{ osoba.["telefon"] }} {% endfor %} </td>
-  <td{% if misto.["materiály"].["noviny"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}> {{ misto.["materiály"].["noviny"] }}</td>
-  <td{% if misto.["materiály"].["letáky"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}> {{ misto.["materiály"].["letáky"] }}</td>
-  <td{% if misto.["materiály"].["plakáty"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}> {{ misto.["materiály"].["plakáty"] }}</td>
-  <td{% if misto.["materiály"].["náramky"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}> {{ misto.["materiály"].["náramky"] }}</td>
-  <td{% if misto.["materiály"].["trička"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}> {{ misto.["materiály"].["trička"] }}</td>
-  <td{% if misto.["materiály"].["samolepky"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}> {{ misto.["materiály"].["samolepky"] }}</td>
-  <td{% if misto.["materiály"].["placky"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}> {{ misto.["materiály"].["placky"] }}</td>
-{% endfor %}
-</tbody>
-</table>
+        <tr>
+            <td data-title="Místo">
+                <strong>{{ misto.["název"] }}</strong> <br/>
+                {{ misto.["adresa"] }}, {{ misto.["městská část"] }} <br/>
+                {{ misto.["otvírací doba"] }}
+            </td>
+            <td data-title="Kontakt">{% for osoba in misto.kontakt %} {% if forloop.index != 1 %}<br/>{% endif %}
+                {{ osoba.["jméno"] }}, tel. {{ osoba.["telefon"] }} {% endfor %}
+            </td>
+            <td data-title="Noviny" {% if misto.["materiály"].["noviny"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}>
+                {{ misto.["materiály"].["noviny"] }}
+            </td>
+            <td data-title="Letáky" {% if misto.["materiály"].["letáky"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}>
+                {{ misto.["materiály"].["letáky"] }}
+            </td>
+            <td data-title="Plakáty" {% if misto.["materiály"].["plakáty"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}>
+                {{ misto.["materiály"].["plakáty"] }}
+            </td>
+            <td data-title="Náramky" {% if misto.["materiály"].["náramky"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}>
+                {{ misto.["materiály"].["náramky"] }}
+            </td>
+            <td data-title="Trička" {% if misto.["materiály"].["trička"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}>
+                {{ misto.["materiály"].["trička"] }}
+            </td>
+            <td data-title="Samolepky" {% if misto.["materiály"].["samolepky"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}>
+                {{ misto.["materiály"].["samolepky"] }}
+            </td>
+            <td data-title="Placky" {% if misto.["materiály"].["placky"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}>
+                {{ misto.["materiály"].["placky"] }}
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
 
 <p>Odkazy na repozitáře s grafickými podklady pro úpravu nebo domácí tisk najdete na <a href="tym.html">samostatné stránce</a>.</p>
 
