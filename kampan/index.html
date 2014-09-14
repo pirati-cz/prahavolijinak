@@ -36,29 +36,32 @@ title: Kampaň
                 {{ misto.["adresa"] }}, {{ misto.["městská část"] }} <br/>
                 {{ misto.["otvírací doba"] }}
             </td>
-            <td data-title="Kontakt">{% for osoba in misto.kontakt %} {% if forloop.index != 1 %}<br/>{% endif %}
-                {{ osoba.["jméno"] }}, tel. {{ osoba.["telefon"] }} {% endfor %}
+            <td data-title="Kontakt">
+                {% for osoba in misto.kontakt %}
+                    {% if forloop.index != 1 %}<br/>{% endif %}
+                    {{ osoba.["jméno"] }}, tel. {{ osoba.["telefon"] }}
+                {% endfor %}
             </td>
-            <td data-title="Noviny" {% if misto.["materiály"].["noviny"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}>
+            <td data-title="Noviny" class="{% if misto.['materiály'].['noviny'] contains 'ne' %}danger{% else %}success{% endif %}">
                 {{ misto.["materiály"].["noviny"] }}
             </td>
-            <td data-title="Letáky" {% if misto.["materiály"].["letáky"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}>
-                {{ misto.["materiály"].["letáky"] }}
+            <td data-title="Letáky" class="{% if misto.['materiály'].['letáky'] contains 'ne' %}danger{% else %}success{% endif %}">
+                {{ misto.['materiály'].['letáky'] }}
             </td>
-            <td data-title="Plakáty" {% if misto.["materiály"].["plakáty"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}>
-                {{ misto.["materiály"].["plakáty"] }}
+            <td data-title="Plakáty" class="{% if misto.['materiály'].['plakáty'] contains 'ne' %}danger{% else %}success{% endif %}">
+                {{ misto.['materiály'].['plakáty'] }}
             </td>
-            <td data-title="Náramky" {% if misto.["materiály"].["náramky"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}>
-                {{ misto.["materiály"].["náramky"] }}
+            <td data-title="Náramky" class="{% if misto.['materiály'].['náramky'] contains 'ne' %}danger{% else %}success{% endif %}">
+                {{ misto.['materiály'].['náramky'] }}
             </td>
-            <td data-title="Trička" {% if misto.["materiály"].["trička"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}>
-                {{ misto.["materiály"].["trička"] }}
+            <td data-title="Trička" class="{% if misto.['materiály'].['trička'] contains 'ne' %}danger{% else %}success{% endif %}">
+                {{ misto.['materiály'].['trička'] }}
             </td>
-            <td data-title="Samolepky" {% if misto.["materiály"].["samolepky"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}>
-                {{ misto.["materiály"].["samolepky"] }}
+            <td data-title="Samolepky" class="{% if misto.['materiály'].['samolepky'] contains 'ne' %}danger{% else %}success{% endif %}">
+                {{ misto.['materiály'].['samolepky'] }}
             </td>
-            <td data-title="Placky" {% if misto.["materiály"].["placky"] contains 'ne' %} class="danger"{% else %} class="success"{% endif %}>
-                {{ misto.["materiály"].["placky"] }}
+            <td data-title="Placky" class="{% if misto.['materiály'].['placky'] contains 'ne' %}danger{% else %}success{% endif %}">
+                {{ misto.['materiály'].['placky'] }}
             </td>
         </tr>
         {% endfor %}
