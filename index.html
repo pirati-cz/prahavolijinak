@@ -12,6 +12,9 @@ title: Piráti na obzoru!
 Uvod
 <script src="/assets/js/odometer.min.js"></script>
 <script>
+window.odometerOptions = {
+	format: 'dddd',
+}
 setTimeout(function(){
     odometer.innerHTML = 2025;
 }, 1000);
