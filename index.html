@@ -12,17 +12,11 @@ title: Piráti na obzoru!
 Uvod
 <script src="/assets/js/odometer.min.js"></script>
 <script>
-	var el = document.querySelector('.odometer');
-	od = new Odometer({
-		el: el,
-		value: 2014
-	});
-	od.render();
-	od.update(2025);
-	//el.innerHTML=2025
+setTimeout(function(){
+    odometer.innerHTML = 2025;
+}, 1000);
 </script>
-<span class="odometer">
-</span>
+<div id="odometer" class="odometer" style="font-size: 100px;">2014</div>
 <a data-scroll href="#tramvaj">Další</a>
 </p>
 <hr />
