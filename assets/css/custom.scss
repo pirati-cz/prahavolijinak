@@ -102,6 +102,9 @@ hr {border-color: #ddd;}
       width:100%;
 }
 
+.slide {
+	min-height: 216px; padding: 41px 0 67px 0;
+}
 }
 
 .programovy-bod {
@@ -158,3 +161,7 @@ overflow: hidden;
 }
 
 #accordion p { padding:10px;}
+
+.slide {
+	min-height: 216px; padding: 41px 0 67px 0;
+}
