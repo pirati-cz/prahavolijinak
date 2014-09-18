@@ -77,8 +77,11 @@
 - "název":  Domov-Ivan Mikoláš
   "adresa":  
   "městská část": Praha 10
-  "kontakt": [ 603454341 ]
-  "materiály":   zatím nejsou
+  "kontakt":
+    -
+     "jméno": Ivan Mikoláš
+     "telefon": 603 454 341
+  "materiály":
     "noviny":    zatím nejsou
     "letáky":    zatím nejsou
     "plakáty":   zatím nejsou
@@ -91,9 +94,12 @@
 - "název":  Domov-Viktor Mahrik
   "adresa":  
   "městská část": Praha 6
-  "kontakt": [ 602767298 ]
-  "materiály":   cca 15 balíků
-    "noviny":    zatím nejsou
+  "kontakt": 
+    -
+     "jméno": Viktor Mahrik
+     "telefon": 602 767 298
+  "materiály":   
+    "noviny":    cca 15 balíků
     "letáky":    zatím nejsou
     "plakáty":   zatím nejsou
     "náramky":   zatím nejsou
