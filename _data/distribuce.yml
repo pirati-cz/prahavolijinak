@@ -59,3 +59,45 @@
     "samolepky": zatím nejsou
     "placky":    zatím nejsou
   "otvírací doba": "po-pá, 14.00–23.00"
+
+- "název":  Mezisklad
+  "adresa":  Bělohorská 38
+  "městská část": Praha 6
+  "kontakt": []
+  "materiály":
+    "noviny":    zatím nejsou
+    "letáky":    zatím nejsou
+    "plakáty":   zatím nejsou
+    "náramky":   zatím nejsou
+    "trička":    zatím nejsou
+    "samolepky": zatím nejsou
+    "placky":    zatím nejsou
+  "otvírací doba": "dohodou"
+
+- "název":  Domov-Ivan Mikoláš
+  "adresa":  
+  "městská část": Praha 10
+  "kontakt": [ 603454341 ]
+  "materiály":   zatím nejsou
+    "noviny":    zatím nejsou
+    "letáky":    zatím nejsou
+    "plakáty":   zatím nejsou
+    "náramky":   zatím nejsou
+    "trička":    zatím nejsou
+    "samolepky": zatím nejsou
+    "placky":    zatím nejsou
+  "otvírací doba": "tel. dohodou"
+
+- "název":  Domov-Viktor Mahrik
+  "adresa":  
+  "městská část": Praha 6
+  "kontakt": [ 602767298 ]
+  "materiály":   cca 15 balíků
+    "noviny":    zatím nejsou
+    "letáky":    zatím nejsou
+    "plakáty":   zatím nejsou
+    "náramky":   zatím nejsou
+    "trička":    zatím nejsou
+    "samolepky": zatím nejsou
+    "placky":    zatím nejsou
+  "otvírací doba": "tel. dohodou"
