@@ -21,49 +21,90 @@ window.odometerOptions = {
 <hr />
 
 <span id="tramvaj">
-<div class="slide">
-<h2>Podívejte se na ty znuděné lidi v roce 2014. Při každodenní cestě napříč městem nemají v Pražské tramvaji co dělat. Kdo se pak diví, že vznikají tyto projevy lidové tvořivosti.</h2>
-<h2>To v roce 2025 nic takového nemáme. Kdo by se nudil, když má v tramvaji rychlé připojení zdarma a svou tvorbu tak kreslí rovnou digitálně a sdílí s přáteli na síti.</h2>
-<a data-scroll href="#bezdomovec">Další</a>
+<div class="slide" id="tsl">
+<script>
+	function zmenTramText1(){
+		document.getElementById("tsl").innerHTML = "<h2>To v roce 2025 nic takového nemáme. Kdo by se nudil, když má v tramvaji rychlé připojení zdarma a svou tvorbu tak kreslí rovnou digitálně a sdílí s přáteli na síti.</h2><a data-scroll href=\"#bezdomovec\">Další</a> <a href=\"#tramvaj\" onclick=\"zmenTramText2();\">Zpet do 2014</a>";
+		return false;
+	}
+	function zmenTramText2(){
+		document.getElementById("tsl").innerHTML = "<h2>Podívejte se na ty znuděné lidi v roce 2014. Při každodenní cestě napříč městem nemají v Pražské tramvaji co dělat. Kdo se pak diví, že vznikají tyto projevy lidové tvořivosti.</h2><a data-scroll href=\"#bezdomovec\">Další</a> <a href=\"#tramvaj\" onclick=\"zmenTramText1();\">Aktualizovat na 2025</a>";
+		return false;
+	}
+	zmenTramText2();
+</script>
 </div>
 </span>
 
 <hr />
 
 <span id="bezdomovec">
-<div class="slide">
-<h2>Co to je tam? To je člověk? - Ano, v roce 2014 v Praze lidé bez domova neměli jinou možnost než se uchýlit na lavičku v parku a žebrat o pár drobných.</h2>
-<h2>Až později vznikla centra, jak je známe dnes - aby měli solidní zázemí a lidé se nebáli je zaměstnat.</h2>
-<a data-scroll href="#paro">Další</a>
+<div id="bsl" class="slide">
+<script>
+	function bezd1(){
+		document.getElementById("bsl").innerHTML = "<h2>Co to je tam? To je člověk? - Ano, v roce 2014 v Praze lidé bez domova neměli jinou možnost než se uchýlit na lavičku v parku a žebrat o pár drobných.</h2><a data-scroll href=\"#paro\">Další</a> <a href=\"#bezdomovec\" onclick=\"bezd2();\">Aktualizovat na 2025</a>";
+		return false;
+	}
+	function bezd2(){
+		document.getElementById("bsl").innerHTML = "<h2>To až později vznikla centra, jak je známe dnes - aby měli solidní zázemí a lidé se nebáli je zaměstnat.</h2><a data-scroll href=\"#paro\">Další</a> <a href=\"#bezdomovec\" onclick=\"bezd1();\">Zpet do 2014</a>";
+		return false;
+	}
+	bezd1();
+</script>
 </div>
+
 </span>
 
 <hr />
 
 <span id="paro">
-<div class="slide" >
-<h2>Proč ten pán vypadá tak zamračeně? - Přišlo mu vyúčtování. Tehdy se jen sebrali peníze a přerozdělili se dle vůle papalášů.</h2>
-<h2>Participativní rozpočtování jak ho znáš vzniklo až s příchodem Pirátů. Dnes by jsi s přerozdělováním eráru jen tak nepochodil. Jen lidé musí rozhodnout, jak naloží se svými penězi.</h2>
-<a data-scroll href="#transparence">Další</a>
+<div id="psl" class="slide" >
+<script>
+	function paro1(){
+		document.getElementById("psl").innerHTML = "<h2>Proč ten pán vypadá tak zamračeně? - Přišlo mu vyúčtování. Tehdy se jen sebrali peníze a přerozdělili se dle vůle papalášů.</h2> <a data-scroll href=\"#transparence\">Další</a>  <a href=\"#paro\" onclick=\"paro2();\">Aktualizovat na 2025</a>";
+		return false;
+	}
+	function paro2(){
+		document.getElementById("psl").innerHTML = "<h2>Participativní rozpočtování jak ho znáš vzniklo až s příchodem Pirátů. Dnes by jsi s přerozdělováním eráru jen tak nepochodil. Jen lidé musí rozhodnout, jak naloží se svými penězi.</h2> <a data-scroll href=\"#transparence\">Další</a> <a href=\"#paro\" onclick=\"paro1();\">Zpet do 2014</a>";
+		return false;
+	}
+	paro1();
+</script>
 </div>
 </span>
 
 <hr />
 
 <span id="transparence">
-<div class="slide">
-<h2>Co to je v tech novinách za titulky? Blanka? Opencard? - To víš, lidé se rádi blýsknou, jak umí nakládat s veřejnými penězi. Zvláště pak svým známým.</h2>
-<h2>Dnes však jsou informace o smlouvách a rozpočtech magistrátu plně transparentní a i běžný občan může ocenit schopného hospodáře.</h2>
-<a data-scroll href="#prostor">Další</a>
+<div class="slide" id="trsl">
+<script>
+	function trans1(){
+		document.getElementById("trsl").innerHTML = "<h2>Co to je v tech novinách za titulky? Blanka? Opencard? - To víš, lidé se rádi blýsknou, jak umí nakládat s veřejnými penězi. Zvláště pak svým známým.</h2><a data-scroll href=\"#prostor\">Další</a> <a href=\"#transparence\" onclick=\"trans2();\">Aktualizovat na 2025</a>";
+		return false;
+	}
+	function trans2(){
+		document.getElementById("trsl").innerHTML = "<h2>Dnes však jsou informace o smlouvách a rozpočtech magistrátu plně transparentní a i běžný občan může ocenit schopného hospodáře.</h2><a data-scroll href=\"#prostor\">Další</a> <a href=\"#transparence\" onclick=\"trans1();\">Zpet do 2014</a>";
+		return false;
+	}
+	trans1();
+</script>
 </div>
 </span>
 
 <hr />
 
 <span id="prostor">
-<div class="slide">
-<h2>Co ti lidé udělali, že to reší strážník? - Jen si otevřeli v parku víno.</h2>
-<h2>Tehdy to bylo fakt na nic. Tak já jdu na Pirátský piknik.</h2>
+<div class="slide" id="ps">
+<script>
+	function ps1(){
+		document.getElementById("ps").innerHTML = "<h2>Co ti lidé udělali, že to reší strážník? - Jen si otevřeli v parku víno.</h2> <a href=\"#prostor\" onclick=\"ps2();\">Aktualizovat na 2025</a>";
+		return false;
+	}
+	function ps2(){
+		document.getElementById("ps").innerHTML = "<h2>Tehdy to bylo fakt na nic. Tak já jdu na Pirátský piknik.</h2> <a href=\"#prostor\" onclick=\"ps1();\">Zpet do 2014</a>";
+		return false;
+	}
+</script>
 </div>
 </span>
 
