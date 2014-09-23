@@ -74,7 +74,7 @@
     "placky":    zatím nejsou
   "otvírací doba": "dohodou"
 
-- "název":  Domov-Ivan Mikoláš
+- "název":  Ivan Mikoláš
   "adresa":  
   "městská část": Praha 10
   "kontakt":
@@ -91,7 +91,7 @@
     "placky":    zatím nejsou
   "otvírací doba": "tel. dohodou"
 
-- "název":  Domov-Viktor Mahrik
+- "název":  Viktor Mahrik
   "adresa":  
   "městská část": Praha 6
   "kontakt": 
@@ -100,6 +100,57 @@
      "telefon": 602 767 298
   "materiály":   
     "noviny":    cca 15 balíků
+    "letáky":    zatím nejsou
+    "plakáty":   zatím nejsou
+    "náramky":   zatím nejsou
+    "trička":    zatím nejsou
+    "samolepky": zatím nejsou
+    "placky":    zatím nejsou
+  "otvírací doba": "tel. dohodou"
+
+- "název":  Jan Zelený
+  "adresa":  Smržovská 1
+  "městská část": Praha Klánovice
+  "kontakt": 
+    -
+     "jméno": Jan Zelený
+     "telefon": 602 604 676 
+  "materiály":   
+    "noviny":    zatím nejsou
+    "letáky":    zatím nejsou
+    "plakáty":   zatím nejsou
+    "náramky":   zatím nejsou
+    "trička":    zatím nejsou
+    "samolepky": zatím nejsou
+    "placky":    zatím nejsou
+  "otvírací doba": "tel. dohodou"
+
+"název":  Olga Richterová
+  "adresa":  
+  "městská část": Praha 10
+  "kontakt": 
+    -
+     "jméno": Olga Richterová
+     "telefon": 774 153 361
+  "materiály":   
+    "noviny":    zatím nejsou
+    "letáky":    zatím nejsou
+    "plakáty":   zatím nejsou
+    "náramky":   zatím nejsou
+    "trička":    zatím nejsou
+    "samolepky": zatím nejsou
+    "placky":    zatím nejsou
+  "otvírací doba": "tel. dohodou"
+
+"název":  Restaurace U Kallaschů
+  "adresa":  Pod Přehradou 18
+  "městská část": Praha 10
+  "kontakt": 
+    -
+     "jméno": Ondřej Kallasch
+     "telefon": 720474822
+  "materiály":   
+    "noviny":    zatím nejsou
     "letáky":    zatím nejsou
     "plakáty":   zatím nejsou
     "náramky":   zatím nejsou
