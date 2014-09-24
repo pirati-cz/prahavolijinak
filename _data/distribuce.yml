@@ -60,12 +60,15 @@
     "placky":    zatím nejsou
   "otvírací doba": "po-pá, 14.00–23.00"
 
-- "název":  Mezisklad
-  "adresa":  Bělohorská 38
-  "městská část": Praha 6
-  "kontakt": []
+- "název":  Václav Fořtík
+  "adresa":  Zavadilova 1297/3
+  "městská část": Praha 6 -Dejvice
+  "kontakt":
+    -
+     "jméno": Václav Fořtík
+     "telefon": 603 234 368
   "materiály":
-    "noviny":    zatím nejsou
+    "noviny":    2 balíky
     "letáky":    zatím nejsou
     "plakáty":   zatím nejsou
     "náramky":   zatím nejsou
@@ -82,7 +85,7 @@
      "jméno": Ivan Mikoláš
      "telefon": 603 454 341
   "materiály":
-    "noviny":    zatím nejsou
+    "noviny":    5 balíků
     "letáky":    zatím nejsou
     "plakáty":   zatím nejsou
     "náramky":   zatím nejsou
@@ -116,7 +119,7 @@
      "jméno": Jan Zelený
      "telefon": 602 604 676 
   "materiály":   
-    "noviny":    zatím nejsou
+    "noviny":    2 balíky
     "letáky":    zatím nejsou
     "plakáty":   zatím nejsou
     "náramky":   zatím nejsou
@@ -133,7 +136,7 @@
      "jméno": Olga Richterová
      "telefon": 774 153 361
   "materiály":   
-    "noviny":    zatím nejsou
+    "noviny":    2 balíky
     "letáky":    zatím nejsou
     "plakáty":   zatím nejsou
     "náramky":   zatím nejsou
@@ -158,3 +161,20 @@
     "samolepky": zatím nejsou
     "placky":    zatím nejsou
   "otvírací doba": "tel. dohodou"
+
+- "název":  Ondra Vodička
+  "adresa":  Bryksova 767
+  "městská část": Praha Černý most
+  "kontakt":
+    -
+     "jméno": Ondra Vodička
+     "telefon": 732 987 354
+  "materiály":
+    "noviny":    10 balíků
+    "letáky":    zatím nejsou
+    "plakáty":   zatím nejsou
+    "náramky":   zatím nejsou
+    "trička":    zatím nejsou
+    "samolepky": zatím nejsou
+    "placky":    zatím nejsou
+  "otvírací doba": "dohodou"
