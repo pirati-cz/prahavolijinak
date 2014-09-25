@@ -1,27 +1,17 @@
-# Dependencies
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-highlighter: pygments
+# Site settings
+title: Piráti.cz
+description: > # this means to ignore newlines until "baseurl:"
+  Evropa je naše moře! S tímto heslem vstupuje Česká pirátská strana 
+  do Evropských parlamentních voleb, kde bude prosazovat základní pirátské myšlenky.
+keywords: piráti,evropa,volby 2014,evropský parlament,kandidáti,Ivan Bartoš,Marcel Kolaja,Markéta Gregorová,Vojtěch Pikal,Tomáš Tožička,Česká pirátská strana
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://volimpiraty.cz" # the base hostname & protocol for your site
+ga: UA-46899507-7
+twitter: PiratePartyCZ
+facebook: ceska.piratska.strana
+youtube: CeskaPiratskaStrana
 
-# Permalinks
-permalink:	/:title
+permalink:     :title.html
 
-# SASS output
-sass:
-    style: :compressed
-
-# Setup
-title:		Praha volí Piráty
-tagline:	'blog'
-description:	"Kandidátní listina České pirátské strany pro volby do zastupitelstva hl. m. Prahy konané 10. a 11. října 2014"
-baseurl:		http://www.prahavolijinak.cz
-
-author:
-  name:		'Jakub Michálek'
-  url:		https://www.pirati.cz/lide/jakub_michalek
-
-paginate:	5
-
-# Custom vars
-favicon:		/assets/images/favicon.ico
+# Build settings
+markdown: kramdown
