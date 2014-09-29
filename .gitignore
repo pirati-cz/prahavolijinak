@@ -1,4 +1,7 @@
 ### Jekyll template
 _site/
+debug/
+build/
 .idea
 *~
+*.pdf

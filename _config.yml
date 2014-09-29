@@ -15,3 +15,14 @@ permalink:     :title.html
 
 # Build settings
 markdown: kramdown
+sass:
+    sass_dir: _sass
+    style: :compressed
+
+menu:
+  - 
+    title: "TOP5"
+    url: /index.html
+  - 
+    title: "Volím v Česku"
+    url: "/volim-v-cesku.html"
